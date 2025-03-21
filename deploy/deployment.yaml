@@ -18,7 +18,7 @@ spec:
         app: accounts
     spec:
       containers:
-      - image: us.icr.io/sn-labs-maraospt/accounts:1
+      - image: IMAGE_NAME_HERE
         name: accounts
         resources: {}
 
@@ -30,14 +30,4 @@ spec:
               secretKeyRef:
                 name: postgresql
                 key: database-name
-          - name: DATABASE_PASSWORD
-            valueFrom:
-              secretKeyRef:
-                name: postgresql
-                key: database-password
-          - name: DATABASE_USER
-            valueFrom:
-              secretKeyRef:
-                name: postgresql
-                key: database-user
-status: {}
+          - name: DATABASE_PASSWORD ▋
